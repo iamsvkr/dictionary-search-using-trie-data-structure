@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+
+    <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-app.js"></script>
+
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyDPGCz50CUa3BT5iXVT2jAKj7-19y06Qlg",
+            authDomain: "dictionary-5444b.firebaseapp.com",
+            databaseURL: "https://dictionary-5444b.firebaseio.com",
+            projectId: "dictionary-5444b",
+            storageBucket: "dictionary-5444b.appspot.com",
+            messagingSenderId: "242294192602",
+            appId: "1:242294192602:web:7c5f42fe2ec2b2b6abe8e3"
+        };
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <body>
+        <h2>Search</h2>
+
+        <form action="/search" method="POST">
+        <label for="fname">Enter word:</label><br>
+        <input type="text" id="word" name="word"><br><br>
+        <input type="submit" value="Submit">
+        </form> 
+
+        <h2>Enter Word and its Meaning</h2>
+
+        <form action="/insert" method="POST">
+        <label>Enter word:</label><br>
+        <input type="text" id="word" name="word"><br><br>
+        <label>Enter meaning:</label><br>
+        <input type="text" id="meaning" name="meaning"><br><br>
+        <input type="submit" value="Submit">
+        </form> 
+    </body>
+    <script>
+        
+    </script>
+</html>
